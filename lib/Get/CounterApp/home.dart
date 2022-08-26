@@ -12,6 +12,8 @@ class Home extends StatelessWidget{
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(title: (Obx(()=> Text('Clicks: ${homeControlller.count}')))),
+      floatingActionButton:
+        FloatingActionButton(child: Icon(Icons.add), onPressed: homeControlller.increment)
     );
   }
 }
