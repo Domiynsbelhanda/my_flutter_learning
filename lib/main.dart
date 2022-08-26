@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'BLoC/myApp.dart';
+import 'BLoC/counter.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const Counter());
 }
