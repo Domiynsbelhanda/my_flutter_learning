@@ -10,6 +10,8 @@ class Home extends StatelessWidget{
     final HomeController homeControlller = Get.put(HomeController());
 
     // TODO: implement build
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(title: (Obx(()=> Text('Clicks: ${homeControlller.count}')))),
+    );
   }
 }
